@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand: #FF9900;
+
+  --text-primary: #000000;
+  --text-secondary: #7D7987;
+
+  --highlight: var(--brand);
+  --details: #ECEFF2;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.8rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+  
+  height: 100vh;
+  padding-inline: 3.2rem;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  max-width: 59.2rem;
+  width: 100%;
+}
+
+span, a {
+  color: var(--highlight);
+}
+
+header img {
+  max-width: 34.8rem;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  gap: 3.2rem;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 4.9rem;
+  font-weight: 400;
+  line-height: 5.6rem;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+footer {
+  /* border-top: 1px solid var(--details); */
+  padding: 0 1.2rem 3.2rem;
+}
+
+hr {
+  border: 1px solid var(--details);
+
+  height: 0px;
+  width: 100%;
+  max-width: 56.8rem;
+
+  margin-bottom: 0.8rem;
+}
+
+/*
+  Aplica as propriedades abaixo a tag `a`
+  que tem antes dela uma outra tag `a`
+*/
+a + a {
+  margin-left: 2.8rem;
+}
+
+a {
+  transition: filter 0.2s;
+}
+
+a:hover {
+  filter: brightness(0.9);
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
